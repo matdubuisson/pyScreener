@@ -8,8 +8,8 @@ STDOUT = 1
 STDERR = 2
 
 # Common between client and server :
-_ip = "185.142.53.128"
-#_ip = "127.0.0.1"
+#_ip = "185.142.53.128"
+_ip = "127.0.0.1"
 _port = 30000
 _failure_limit = 5
 _failure_delay = 0.5
@@ -26,7 +26,7 @@ datas = {
         "input_fifo_file": "-fifo input_screener.fifo",
         "output_txt_file": "-reset_txt output_screener.txt",
         "registered_process_txt_file": "-reset_txt registered_process_screen.txt -in process/",
-        "presence_flag_file": "-reset_txt screener_presence.flag -in flag/",
+        #"presence_flag_file": "-reset_txt screener_presence.flag -in flag/",
         # Specific datas :
         "executable_bash_file": "-txt executable.bash",
         "max_length_for_output_txt_file": 10,
@@ -40,7 +40,7 @@ datas = {
         "output_txt_file": None,
         "registered_process_txt_file": "-reset_txt registered_process_viewer_{0}.txt", # {0} is the id 
         # in the case where there are several viewers
-        "presence_flag_file": "-reset_txt viewer_presence_{0}.flag",
+        #"presence_flag_file": "-reset_txt viewer_presence_{0}.flag",
         # Different things to view :
         "view_choices": ("screener", "server"),
         # Specific datasi :
@@ -52,7 +52,7 @@ datas = {
         "input_fifo_file": "-fifo input_server.fifo",
         "output_txt_file": "-txt output_server.txt",
         "registered_process_txt_file": "-reset_txt registered_process_server.txt",
-        "presence_flag_file": "-reset_txt server_presence.flag",
+        #"presence_flag_file": "-reset_txt server_presence.flag",
         # Specific datas :
         "max_length_for_output_txt_file": 10,
         "refresh_delay": 1,
@@ -72,7 +72,7 @@ datas = {
         "input_fifo_file": None,
         "output_txt_file": None,
         "registered_process_txt_file": "-txt registered_process_client_{0}.txt -in process/", # Here {0} is an id
-        "presence_flag_file": "-txt client_presence_{0}.flag -in flags/",
+        #"presence_flag_file": "-txt client_presence_{0}.flag -in flags/",
         # Specific datas :
         # ==> Connecting :
         "ip": _ip,

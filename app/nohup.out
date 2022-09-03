@@ -6,3 +6,11 @@ Traceback (most recent call last):
   File "/home/racteur/Desktop/screener/app/server_screen.py", line 171, in launch_server
     server_socket.bind(conf.datas["server"]["address"])
 OSError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/home/racteur/Desktop/screener/app/screener_screen.py", line 43, in <module>
+    launch_screener()
+  File "/home/racteur/Desktop/screener/app/screener_screen.py", line 32, in launch_screener
+    if fm.get_file_length(fileName, "\n") > conf.datas["screener"]["max_length_for_output_txt_file"]:
+  File "/home/racteur/Desktop/screener/app/file_managing_screen.py", line 99, in get_file_length
+    char = os.read(fd, 1).decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc3 in position 0: unexpected end of data
