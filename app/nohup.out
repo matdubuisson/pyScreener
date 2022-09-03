@@ -1,0 +1,8 @@
+Sep 02, 2022 6:55:05 PM io.netty.util.internal.MacAddressUtil defaultMachineId
+WARNING: Failed to find a usable hardware address from the network interfaces; using random bytes: 6f:e2:0f:63:dd:56:79:53
+Traceback (most recent call last):
+  File "/home/racteur/Desktop/screener/app/server_screen.py", line 196, in <module>
+    launch_server()
+  File "/home/racteur/Desktop/screener/app/server_screen.py", line 171, in launch_server
+    server_socket.bind(conf.datas["server"]["address"])
+OSError: [Errno 99] Cannot assign requested address
