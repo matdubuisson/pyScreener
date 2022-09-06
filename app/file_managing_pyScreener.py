@@ -50,7 +50,7 @@ def create_directory_file(fileName):
         return -1
     elif is_in_path(fileName):
         return 0
-    path = fileName.split(os.sep)
+    path = fileName.replace(os.sep, "/").split("/")
     current_path = os.getcwd()
     for i in range(len(path)):
         if path[i] == "":
@@ -173,13 +173,15 @@ def read_line(fileName, line_index=0):
 
 if __name__ == "__main__":
     #print(is_in_path("test.txt"), is_in_path("qfsfhdfqidsoi.djsdi"))
-    create_directory_file("test/test/retest"); os.chdir("test")
+    #create_directory_file("test/test/retest"); os.chdir("test")
     #create_txt_file("test.txt"); create_fifo_file("retset.fifo")
     #os.chdir(os.pardir)
     #create_txt_file("test.txt")
     #remove_file("test.txt")
     #remove_file("test")
     create_txt_file("test.txt")
-    add_line("test.txt", "Salut comment ca va ?\nYolo !!")
-    print(read_line("test.txt", 14))
-    clear_file("test.txt")
+    print(is_in_path("test.txt"))
+    print(os.listdir())
+    #add_line("test.txt", "Salut comment ca va ?\nYolo !!")
+    #print(read_line("test.txt", 14))
+    #clear_file("test.txt")
