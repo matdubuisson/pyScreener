@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author : matdubuisson
+# Source : https://github.com/matdubuisson/pyScreener
+# Licence : Apache (2)
+
 last_command="stop"
 fifo_file="about_screener/input_screener.fifo"
 

@@ -1,3 +1,7 @@
+# Author : matdubuisson
+# Source : https://github.com/matdubuisson/pyScreener
+# Licence : Apache (2)
+
 import os
 import file_managing_pyScreener as fm
 from printer_pyScreener import *

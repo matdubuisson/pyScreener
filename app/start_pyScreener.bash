@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author : matdubuisson
+# Source : https://github.com/matdubuisson/pyScreener
+# Licence : Apache (2)
+
 echo "Welcome in screener linux for screen and server"
 if [[ ! -f /bin/python3 ]] && [[ ! -f /usr/bin/python3 ]]; then
     echo "It needs to get python3, please install it :"
