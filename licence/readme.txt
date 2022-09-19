@@ -1,6 +1,5 @@
 Author : Mattéo Dubuisson (date of birth 13/08/2003)
 => Student of Louvain-La-Neuve Belgium
-Mail : matteo.dubuisson@student.uclouvain.be
 Licence : Apache (2)
 Statut : Open source project
 Description :
