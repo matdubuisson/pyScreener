@@ -12,7 +12,6 @@ STDOUT = 1
 STDERR = 2
 
 # Common between client and server :
-#_ip = "185.142.53.128"
 _ip = "127.0.0.1"
 _port = 30000
 _failure_limit = 5
